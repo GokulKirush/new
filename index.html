@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Chatbot with Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="chatbot-container">
+            <div class="chatbot-header">
+                <h2>Navigation Chatbot</h2>
+            </div>
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="message bot-message">Hello! I can help you with directions. Where would you like to go?</div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="user-input" placeholder="Type your destination...">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCySZNiEMdtVCIXvwIUVwZmI3oBzDSY5I4&callback=initMap">
+    </script>
+</body>
+</html>
